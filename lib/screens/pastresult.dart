@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lotteryapp/screens/calender.dart';
 
 class PastResult extends StatefulWidget {
   @override
@@ -45,10 +46,19 @@ class _PastResultState extends State<PastResult> {
                       padding: const EdgeInsets.all(8.0),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          prefixIcon: Icon(
-                            Icons.calendar_today,
-                            color: Colors.red,
-                            size: 30,
+                          prefixIcon: GestureDetector(
+                            onTap:  () {
+                                Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              Calender()));
+                            },
+                                                      child: Icon(
+                              Icons.calendar_today,
+                              color: Colors.red,
+                              size: 30,
+                            ),
                           ),
                           labelText: "Search by Date",
                           fillColor: Colors.white,

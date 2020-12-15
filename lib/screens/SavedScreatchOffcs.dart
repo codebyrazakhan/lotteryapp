@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class SavedScreatchOffcs extends StatefulWidget {
   @override
@@ -103,7 +104,7 @@ class _SavedScreatchOffcsState extends State<SavedScreatchOffcs> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Icon(
-                      Icons.filter_alt,
+                       MdiIcons.filterVariant,
                       color: Colors.red,
                     ),
                   ),

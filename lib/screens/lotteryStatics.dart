@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class LotteryStatics extends StatefulWidget {
   @override
@@ -87,7 +88,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Icon(
-                      Icons.filter_alt,
+                      MdiIcons.filterVariant,
                       color: Colors.red,
                     ),
                   ),
@@ -206,7 +207,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                             MainAxisAlignment.center,
                                         children: [
                                           Icon(
-                                            Icons.check,
+                                        Icons.done,
                                             color: Colors.red,
                                             size: 20,
                                           ),
@@ -230,7 +231,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                             MainAxisAlignment.center,
                                         children: [
                                           Icon(
-                                            Icons.compare,
+                                           Icons.close_fullscreen,
                                             color: Colors.red,
                                             size: 20,
                                           ),
@@ -339,7 +340,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.check,
+                                    Icons.done,
                                         color: Colors.red,
                                         size: 20,
                                       ),
@@ -362,7 +363,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.compare,
+                                        Icons.close_fullscreen,
                                         color: Colors.red,
                                         size: 20,
                                       ),
@@ -469,7 +470,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.check,
+                                        Icons.done,
                                         color: Colors.red,
                                         size: 20,
                                       ),
@@ -492,7 +493,7 @@ class _LotteryStaticsState extends State<LotteryStatics> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.compare,
+                                       Icons.close_fullscreen,
                                         color: Colors.red,
                                         size: 20,
                                       ),

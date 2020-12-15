@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lotteryapp/screens/SavedScreatchOffcs.dart';
 import 'package:lotteryapp/screens/premiercash.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class ScartchOffGuide extends StatefulWidget {
   @override
@@ -105,7 +106,7 @@ class _ScartchOffGuideState extends State<ScartchOffGuide> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Icon(
-                      Icons.filter_alt,
+                       MdiIcons.filterVariant,
                       color: Colors.red,
                     ),
                   ),
