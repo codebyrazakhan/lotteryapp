@@ -7,6 +7,7 @@ class Calender extends StatefulWidget {
 
 class _CalenderState extends State<Calender> {
     DateTime selectedDate = DateTime.now();
+     // ignore: unused_element
      _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
       context: context,
@@ -42,7 +43,7 @@ class _CalenderState extends State<Calender> {
                   fieldHintText: "Month/Date/Year",
                   builder: (BuildContext context, Widget child) {
                     return Theme(
-                      data: ThemeData.dark().copyWith(
+                      data: ThemeData.light().copyWith(
                         colorScheme: ColorScheme.dark(
                           primary: Colors.red,
                           onPrimary: Colors.white,

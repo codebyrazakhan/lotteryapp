@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lotteryapp/screens/lotteryresult.dart';
 import 'package:lotteryapp/screens/signUpscreen.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -236,7 +237,7 @@ class _MoreinformationState extends State<Moreinformation> {
                 )
               ],
             ),
-             SizedBox(
+            SizedBox(
               height: 20,
             ),
             Row(
@@ -310,6 +311,33 @@ class _MoreinformationState extends State<Moreinformation> {
                 )
               ],
             ),
+            SizedBox(
+              height: 5,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                MaterialButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(30))),
+                  elevation: 0,
+                  minWidth: 300,
+                  height: 50,
+                  color: Colors.red,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text('Upgade To Premium & Remove Ads',
+                        style: TextStyle(fontSize: 18.0, color: Colors.white)),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => LotteryResult()));
+                  },
+                ),
+              ],
+            )
           ],
         )),
       ),

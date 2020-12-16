@@ -13,6 +13,11 @@ class _ScanningState extends State<Scanning> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        iconTheme: IconThemeData(color: Colors.red, size: 25),
+      ),
       body: Column(
         children: [
           Expanded(
@@ -29,6 +34,7 @@ class _ScanningState extends State<Scanning> {
               ),
             ),
           ),
+
           // Expanded(
           //   flex: 1,
           //   child: Container(
@@ -39,18 +45,18 @@ class _ScanningState extends State<Scanning> {
           //           Row(
           //             mainAxisAlignment: MainAxisAlignment.end,
           //             children: [
-          //               Padding(
-          //                 padding: const EdgeInsets.all(8.0),
-          //                 child: RaisedButton(
-          //                   onPressed: () {},
-          //                   color: Colors.red,
-          //                   child: Text(
-          //                     "Finish",
-          //                     style:
-          //                         TextStyle(color: Colors.white, fontSize: 20),
-          //                   ),
-          //                 ),
-          //               ),
+          // Padding(
+          //   padding: const EdgeInsets.all(8.0),
+          //   child: RaisedButton(
+          //     onPressed: () {},
+          //     color: Colors.red,
+          //     child: Text(
+          //       "Finish",
+          //       style:
+          //           TextStyle(color: Colors.white, fontSize: 20),
+          //     ),
+          //   ),
+          // ),
           //             ],
           //           ),
           //           Center(
